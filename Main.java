@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();
@@ -6,6 +8,9 @@ public class Main {
         for (int val : values) {
             tree.insert(val);
         }
+
+        System.out.println("Valores a insertar en el Árbol:");
+        System.out.println(Arrays.toString(values));
 
         System.out.println("Árbol tras insertar:");
         tree.printTree();
@@ -22,9 +27,13 @@ public class Main {
         System.out.println("Árbol tras borrar 50:");
         tree.printTree();
 
-        // Recorridos (sin imprimir)
+        System.out.println("Recorrido PreOrder:");
         tree.preOrder();
+
+        System.out.println("Recorrido InOrder:");
         tree.inOrder();
+
+        System.out.println("Recorrido PostOrder:");
         tree.postOrder();
     }
 }

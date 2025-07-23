@@ -9,31 +9,32 @@ public class Main {
             tree.insert(val);
         }
 
-        System.out.println("Valores a insertar en el Árbol:");
-        System.out.println(Arrays.toString(values));
+        System.out.println("\nValores a insertar en el Árbol:");
+        System.out.println(Arrays.toString(values)); // Muestra el array correctamente
 
-        System.out.println("Árbol tras insertar:");
+        System.out.println("\nÁrbol tras insertar:");
         tree.printTree();
 
         tree.delete(20);
-        System.out.println("Árbol tras borrar 20:");
+        System.out.println("\nÁrbol tras borrar 20:");
         tree.printTree();
 
         tree.delete(30);
-        System.out.println("Árbol tras borrar 30:");
+        System.out.println("\nÁrbol tras borrar 30:");
         tree.printTree();
 
         tree.delete(50);
-        System.out.println("Árbol tras borrar 50:");
+        System.out.println("\nÁrbol tras borrar 50:");
         tree.printTree();
 
-        System.out.println("Recorrido PreOrder:");
+        // Recorridos
+        System.out.println("\nRecorrido PreOrden:");
         tree.preOrder();
 
-        System.out.println("Recorrido InOrder:");
+        System.out.println("\nRecorrido InOrden:");
         tree.inOrder();
 
-        System.out.println("Recorrido PostOrder:");
+        System.out.println("\nRecorrido PostOrden:");
         tree.postOrder();
     }
 }
